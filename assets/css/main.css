@@ -164,15 +164,141 @@ body {
   background-color: var(--background-black);
 }
 
-.footer .footer-logo {
+.footer-logo {
   width: 100%;
 }
 
-.footer .footer-logo figure {
+.footer-logo figure {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-top: 60px;
 }
 
+.footer-contact {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contact ul {
+  list-style: none;
+}
+
+.footer-contact ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact ul li img {
+  margin-right: 10px;
+}
+
+.footer-contact ul li a {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #cbcbcb;
+  font-size: 25px;
+}
+
+.footer-message {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-message h5 {
+  font-size: 45px;
+  color: white;
+}
+
+.footer-message h6 {
+  font-size: 30px;
+  color: #cbcbcb;
+}
+
+.footer-message form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-message form input {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+.footer-message form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  height: 150px;
+  resize: none;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+.footer-message .btn button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-green);
+}
+
+.footer-links {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-links h5 {
+  font-size: 45px;
+  color: white;
+}
+
+.footer-links h6 {
+  font-size: 30px;
+  color: #cbcbcb;
+}
+
+.footer-links ul {
+  margin-top: 25px;
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-top: 10px;
+}
+
+.footer-links ul li a {
+  margin-left: 15px;
+  font-size: 22;
+  text-decoration: none;
+  color: var(--subtitle-gray-color);
+}
+
 /* ================================ Seccion de Copyright */
+
+.footer-copyright {
+  margin-top: 20px;
+  background-color: rgb(10, 10, 10, 0.3);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-copyright p {
+  margin-top: 5px;
+  font-size: 10px;
+  /* font-weight: bold; */
+}
