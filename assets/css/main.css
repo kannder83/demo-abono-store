@@ -1,0 +1,178 @@
+/* ================================ Variables */
+:root {
+  --title-color: #102008;
+  --subtitle-color: #212c1c;
+  --subtitle-gray-color: #787878;
+  --text-color: #535353;
+  --background-green: #6d8f71;
+  --background-black: #1c1c1c;
+}
+
+/* ================================ Estilos Estandar */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ================================ Seccion de hero */
+
+.main {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../img/paprika-3212137_1920_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 3fr;
+}
+
+.main-nav {
+  width: 100%;
+  padding: 10px;
+}
+
+.main-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title h1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--title-color);
+}
+
+.main-title h2 {
+  font-size: 25px;
+  color: var(--subtitle-color);
+}
+
+/* ================================ Seccion de hero */
+.about {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.about h3 {
+  margin-top: 50px;
+  padding: 5px;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.about h4 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--subtitle-gray-color);
+}
+
+.about p {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--text-color);
+}
+.about .btn {
+  padding: 10px;
+}
+
+.about .btn button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-green);
+}
+
+.about .about-img {
+  text-align: center;
+}
+
+/* ================================ Seccion de Productos */
+
+.products {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ebebeb;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.products h3 {
+  /* margin-top: 50px; */
+  padding: 60px 5px 5px 5px;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.products h4 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--subtitle-gray-color);
+}
+
+.products .products-grill {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .products-grill figure {
+  margin: 0 auto;
+}
+
+/* ================================ Seccion de Footer */
+.footer {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  background-color: var(--background-black);
+}
+
+.footer .footer-logo {
+  width: 100%;
+}
+
+.footer .footer-logo figure {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* ================================ Seccion de Copyright */
