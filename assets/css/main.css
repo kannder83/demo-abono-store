@@ -69,7 +69,7 @@ body {
   color: var(--subtitle-color);
 }
 
-/* ================================ Seccion de hero */
+/* ================================ Seccion de Acerda de  */
 .about {
   width: 100%;
   min-height: 100vh;
@@ -157,7 +157,7 @@ body {
 /* ================================ Seccion de Footer */
 .footer {
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -178,6 +178,7 @@ body {
 .footer-contact {
   width: 100%;
   margin-top: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -209,6 +210,7 @@ body {
 .footer-message {
   width: 100%;
   margin-top: 20px;
+  padding: 10px;
 }
 
 .footer-message h5 {
@@ -259,6 +261,7 @@ body {
 .footer-links {
   width: 100%;
   margin-top: 20px;
+  padding: 10px;
 }
 
 .footer-links h5 {
@@ -301,4 +304,55 @@ body {
   margin-top: 5px;
   font-size: 10px;
   /* font-weight: bold; */
+}
+
+/* ================================ MediaQuery */
+
+@media screen and (min-width: 780px) {
+  /* ========================== >> Seccion de Quienes Somos */
+  .about {
+    min-height: auto;
+    padding: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "Image Title"
+      "Image SubTitle"
+      "Image Paragraph"
+      "Image Button";
+    align-items: center;
+  }
+
+  .about h3 {
+    margin-top: 10px;
+    grid-area: Title;
+  }
+
+  .about h4 {
+    grid-area: SubTitle;
+  }
+
+  .about p {
+    grid-area: Paragraph;
+  }
+  .about .btn {
+    grid-area: Button;
+  }
+
+  .about .about-img {
+    grid-area: Image;
+  }
+
+  /* ========================== >> Seccion de productos */
+
+  .products {
+    min-height: auto;
+  }
+
+  .products .products-grill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
 }
